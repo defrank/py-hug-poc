@@ -110,7 +110,8 @@ HTTP
                             "content_type": "application/json; charset=utf-8",
                             "format": "JSON (Javascript Serialized Object Notation)",
                             "type": "Dog"
-                        }
+                        },
+                        "usage": "A fake index of dog resources that is randomly generated."
                     }
                 },
                 "/dogs/{id}": {
@@ -124,7 +125,8 @@ HTTP
                             "content_type": "application/json; charset=utf-8",
                             "format": "JSON (Javascript Serialized Object Notation)",
                             "type": "Dog"
-                        }
+                        },
+                        "usage": "A fake dog resource that echos and randomly generates a dog."
                     }
                 }
             }

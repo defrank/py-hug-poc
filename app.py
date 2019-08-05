@@ -35,6 +35,7 @@ class Dog:
 @hug.cli()
 @hug.get('/dogs')
 def dogs() -> Dog.Schema(many=True):
+    """A fake index of dog resources that is randomly generated."""
     return [
         Dog(id=uuid.uuid1(), name=name, abbreviation=abbrev)
         for name, abbrev in (
@@ -47,6 +48,7 @@ def dogs() -> Dog.Schema(many=True):
 @hug.cli()
 @hug.get('/dogs/{id}')
 def dog(id: UUID()) -> Dog.Schema():
+    """A fake dog resource that echos and randomly generates a dog."""
     name = random.choice(list(DOG_TYPES_TO_ABBREVIATIONS))
     abbrev = DOG_TYPES_TO_ABBREVIATIONS[name]
     return Dog(id=id, name=name, abbreviation=abbrev)
