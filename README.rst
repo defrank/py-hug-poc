@@ -38,6 +38,21 @@ CLI
 
 ::
 
+    › ./app.py dog --help
+    usage: app.py [-h] id
+
+    A fake dog resource that echos and randomly generates a dog.
+
+    positional arguments:
+      id          Deserialize ``value``. :param value: The value to be deserialized. :param str attr: The attribute/key in `data` to be deserialized. :param
+                  dict data: The raw input data passed to the `Schema.load`. :param dict kwargs': Field-specific keyword arguments. :raise ValidationError: If
+                  an invalid value is passed or if a required value is missing.
+
+    optional arguments:
+      -h, --help  show this help message and exit
+
+::
+
     › ./app.py dogs
     [{'name': 'German Shepherd Dog', 'abbreviation': 'GSD', 'id': 'a4594592-b7a5-11e9-be8d-acde48001122'}, {'name': 'Pomeranian', 'abbreviation': None, 'id': 'a4594678-b7a5-11e9-be8d-acde48001122'}, {'name': 'German Shepherd Dog', 'abbreviation': 'GSD', 'id': 'a45946be-b7a5-11e9-be8d-acde48001122'}, {'name': 'Australian Cattle Dog', 'abbreviation': 'ACD', 'id': 'a45946fa-b7a5-11e9-be8d-acde48001122'}, {'name': 'Pomeranian', 'abbreviation': None, 'id': 'a459472c-b7a5-11e9-be8d-acde48001122'}, {'name': 'German Shepherd Dog', 'abbreviation': 'GSD', 'id': 'a459475e-b7a5-11e9-be8d-acde48001122'}, {'name': 'Pomeranian', 'abbreviation': No ne, 'id': 'a4594786-b7a5-11e9-be8d-acde48001122'}, {'name': 'Pomeranian', 'abbreviation': None, 'id': 'a45947b8-b7a5-11e9-be8d-acde48001122'}, {'name': 'Pomeranian', 'abbreviation': None, 'id': 'a45947e0-b7a5-11e9-be8d-acde48001122'}, {'name': 'Australian Cattle Dog', 'abbreviation': 'ACD', 'id': 'a4594812-b7a5-11e9- be8d-acde48001122'}]
 
